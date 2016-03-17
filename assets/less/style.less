@@ -1,0 +1,118 @@
+//
+// Import Cascade
+// --------------------------------------------------
+
+@import '../../less/cascade.less';
+@import 'cascade-variables.less';
+
+// @font-size-base: 17px; // increase base font size
+
+/* Project-Specific Styles */
+
+.headline-lockup {
+  border-top: 10px solid lighten(@major-color, 5%);
+  border-bottom: 10px solid darken(@major-color, 3%);
+  
+  .container {
+   position: relative; 
+  }
+  
+  .fa-huge {
+    font-size: 28em;
+    line-height: 0.75em;
+    color: fadeout(@light-color, 85%);
+    position: absolute;
+    // z-index: 0;
+    top: 0;
+    left: 0;
+    //text-shadow: 10px 10px 0px rgba(0,0,0,0.05);
+  }
+}
+
+.move-forward {
+  img {
+    margin: 30px 0;
+  }
+}
+
+.guests {
+  background: url('../img/guests-10-percent.jpg') 0px 0px repeat;
+  min-height: 560px;
+  padding: 190px 0;
+}
+
+.pricing {
+  .panel {
+    max-width: 100%;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  @media (min-width: @screen-tablet) {
+    .row div {
+      margin-top: @base-module-padding;
+    }
+    .panel-body {
+      min-height: 0;
+    }
+  }
+  @media (min-width: @screen-desktop) {
+    .row div {
+      margin-top: 0;
+    }
+    .panel-body {
+      min-height: 285px;
+    }
+  }
+  
+}
+
+
+.quote-long.inverse-major {
+  blockquote:before,
+  blockquote small {
+    color: @light-color;
+    // font-weight: 300;
+  }
+}
+
+.waiting-list {
+  
+  form {
+    padding-top: 20px;
+  }
+  
+  @media (min-width: @screen-tablet) {
+    form .row > div {
+      padding-left: 0;
+    }
+  }
+}
+
+.questions {
+  
+  h2 {
+    margin-top: 0;
+  }
+  img {
+    border: none;
+  }
+}
+
+
+// default to slots filled, with waiting list form showing
+.pricing {
+  display: none;
+}
+
+// change visibility if slots are available
+body.available {
+
+  .pricing {
+    display: block;
+  }
+
+  .waiting-list {
+    display: none;
+  }
+}

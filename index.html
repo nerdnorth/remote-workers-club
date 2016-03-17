@@ -1,211 +1,295 @@
+<!DOCTYPE html>
 
-
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <title>Remote Workers Club</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/app.css">
-
-  
-
-  
-  <script type="text/javascript">
-    WebFontConfig = {
-      google: { families: [ 'Asap:400italic,700italic:latin', 'Source+Sans+Pro:400,300,600,200,300italic,400italic,700:latin' ] }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
-
+<title>Product People Club: Daily stand-ups and community for solopreneurs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet" media="screen">
 </head>
 
+<body class="available">
+<!-- add class body.available to hide waiting list form & show pricing -->
 
-<body>
-
-  
-  <div style="height: 0; width: 0; position: absolute; visibility: hidden">
-     
-     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><defs>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.21 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"/>
-                <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-        </filter>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
-            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"/>
-            <feGaussianBlur stdDeviation="0" in="shadowOffsetInner1" result="shadowBlurInner1"/>
-            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
-            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.07 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"/>
-            <feMerge>
-                <feMergeNode in="SourceGraphic"/>
-                <feMergeNode in="shadowMatrixInner1"/>
-            </feMerge>
-        </filter>
-    </defs><symbol id="book" viewBox="0 0 264 340">
-    <title>book</title>
+<div class="headline-lockup inverse-major pattern-noise module-padding">
+  <div class="container">
+    <div class="row"> <i class="fa fa-huge fa-comments-o"></i>
+      <div class="col-sm-8 col-sm-offset-4"> <a class="btn btn-sm pull-right" href="#">Log in</a>
+        <h2 class="logo logo-small">Remote Workers Club</h2>
+        <h1 class="light-weight">Community + job offers for remote workers</h1>
+        <p class="lead">You're trying to build your own thing; you're doing it alone, in your spare time. What's the hardest part? <em>Keeping your motivation up. Feeling isolated.</em></p>
+      </div>
+    </div>
+    <!-- /.row --> 
     
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g class="book" sketch:type="MSLayerGroup">
-            <path d="M13.2403634,2.45942773 C13.2322582,1.35009322 14.1203108,0.450799912 15.2237214,0.450799912 L261.719915,0.450799912 C262.823399,0.450799912 263.717949,1.35296781 263.717949,2.45942773 L263.717949,322.889309 C263.717949,323.998644 262.819504,324.897937 261.720707,324.897937 L17.5934646,324.897937 C16.4904184,324.897937 15.5896312,323.995769 15.581547,322.889309 L13.2403634,2.45942773 Z" class="book__back-cover" fill="#3FCFD5" sketch:type="MSShapeGroup"/>
-            <path d="M15.5962228,0.44711187 C15.5962228,0.44711187 15.1973692,0.162946778 13.8713475,1.09663208 C8.59787401,4.80981792 0,16.0355969 0,16.0355969 L15.5962228,16.0355969 L15.5962228,0.44711187 Z" class="book__back-binding" fill="#1E9A98" sketch:type="MSShapeGroup"/>
-            <rect class="book__page" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="15.5962228" y="7.53479853" width="241.032534" height="311.695939"/>
-            <rect class="book__page" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="12.7605459" y="10.368398" width="241.032534" height="311.695939"/>
-            <rect class="book__page" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="9.92486904" y="13.2019974" width="241.032534" height="311.695939"/>
-            <rect class="book__page" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="7.08919217" y="16.0355969" width="241.032534" height="311.695939"/>
-            <rect class="book__page" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="4.2535153" y="18.8691963" width="241.032534" height="311.695939"/>
-            <rect class="book__front-cover" fill="#3FCFD5" sketch:type="MSShapeGroup" x="0" y="16.0355969" width="248.121726" height="323.030337" rx="2"/>
-            <path d="M22.6854149,16.0355969 L0,16.0355969 L0,337.066078 C0,338.167706 0.898794985,339.065934 2.00751479,339.065934 L22.6854149,339.065934 L22.6854149,16.0355969 Z" class="book__front-binding" fill="#1E9A98" filter="url(#filter-8)" sketch:type="MSShapeGroup"/>
-        </g>
-    </g>
-</symbol></svg>
-     
   </div>
-
+  <!-- /.container --> 
   
-  <header class="header header--centered">
+</div>
+<!-- /.module-padding -->
 
-    <div class="container container--normal">
-
-      <h1 class="header__title">Remote Workers Club</h1>
-      <p class="header__tagline">Get confidential remote job offers</p>
-
-    </div>
-
-  </header>
-
-  
-  <main role="main">
-
-
-    
-    <blockquote class="quote">
-      <div class="container container--widened">
-        <p class="quote__text">I love my remote job; but what if I lose it?</p></div>
-    </blockquote>
-
-    
-    <div class="container container--normal">
-
-      
-      <!--
-      <div class="videoWrapper" data-image-src="http://lorempixel.com/560/315/sports/">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7qCj2Z_mph0" frameborder="0" allowfullscreen></iframe>
+<div class="quote-long pattern-noise">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 col-sm-offset-1">
+        <blockquote>
+          <p>I love my remote job; but what if I lose it?</p>
+        </blockquote>
       </div>
-      -->
-      
-      <h2 class='section-heading' id="#sell-more">Want to sell more products?</h2>
-      <p>Gumroad recommends that you sell your products in tiers: in a recent conference talk, Ryan Delk mentioned that <em class='u-highlight'>"products with tiers bring in 5 times more revenue" than those without.</em> In fact, if you put most of your value in your top-tier product, it can bring in up 62% of your total revenue!</p>
-
-      <p>Pros like <a href="#">Sacha Greif</a>, <a href="#">Brennan Dunn</a> and <a href="#">Nathan Barry</a> use landing pages with tiered pricing to drive more sales for the their eBooks, and other digital products.</p>
-
-      <ul class="checkbox-list">
-        <li class="checkbox-list__item">Hickory, dickory, dock.</li>
-        <li class="checkbox-list__item">The mouse ran up the clock.</li>
-        <li class="checkbox-list__item">The clock struck one, the mouse ran down.</li>
-        <li class="checkbox-list__item">Hickory, dickory, dock.</li>
-      </ul>
-
-      
-      <div class="callout-box callout-box--spaced">
-        <h2 class='section-heading section-heading--with-line'>Launching in 2016</h2>
-        <div class="callout-box__content-left">
-          <p>Get notified as soon as we launch the Remote Workers member directory</p>
-        </div>
-        <div class="callout-box__content-right">
-
-          <form action="" class="form-vertical">
-            <div class="form-vertical__row">
-              <label for="name" class="form-vertical__label">First Name</label>
-              <input type="text" name="name" class="form-input-text">
-            </div>
-            <div class="form-vertical__row">
-              <label for="name" class="form-vertical__label">Email</label>
-              <input type="email" name="email" class="form-input-text">
-            </div>
-            <div class="form-vertical__row--submit">
-              <button type="submit" class="button">Sign up for your free chapter</button>
-              <p class="form-submit-text u-center">
-                We promise we won’t spam. And you can unsubscribe whenever you like.
-              </p>
-            </div>
-          </form>
-
-        </div>
-      </div>
-
-    </div>
-
-    <blockquote class="quote">
-      <div class="container container--widened">
-        <p class="quote__text">Keep going. It gets better.</p>
-        <cite class="quote__byline"><a href="#">Hamish, The Creator</a></cite>
-      </div>
-    </blockquote>
-    
-    <div class="author">
-      <div class="container container--grid">
-        <div class="author__left">
-          <img src="http://lorempixel.com/400/400/animals/" alt="It's me! Justin Jackson." class="author__image">
-        </div>
-        <div class="author__right">
-          <p>Hi, I’m John Doe.</p>
-
-          <p>I’ve been writing since 1980. I was a Pokemon Master at age 14. I bought my first house in the 10th grade, and I built my first website in 1993. Now, I'm writing books. You should read them all. <b>I can guarantee you'll enjoy it.</b></p>
-
-          <p>I live in <a href="#">Anchorage, Alaska</a> with my wife and 12 kids. For fun, I fly airplanes, jump of bridges, and drink my home-brewed beer (sometimes all at the same time).</p>
-        </div>
+      <div class="col-sm-4 text-center"> <img class="img-circle" src="assets/img/rob-walling.jpg" alt="photo of Rob Walling" width="150px" height="150px" />
+        <h5><em>&mdash; Rob Walling</em></h5>
       </div>
     </div>
-
-  </main>
-
+  </div>
+  <!-- /.container --> 
   
-  <footer class="footer">
-    <div class="container container--grid">
-      <div class="footer__col footer__col--normal">
-        <p class="footer-heading">The Title Of Your Book</p>
-        <p>This book will help you make millions.</p>
+</div>
+<!-- /.quote-long -->
+
+<div class="move-forward module-padding merge-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h2 class="text-center"> <small>If you don't ship,</small><br>
+          <em class="matching-color">You don't move forward</em> </h2>
+        <hr>
+        <p>Product People Club is focused on helping you improve one habit: your shipping habit. You check in every day, or every week, and tell the community what you're working on:</p>
+        <p><img class="img-responsive" src="assets/img/status.png" /></p>
+        <p>Then you <strong>get support and accountability</strong> so you can reach your goals:</p>
+        <p><img class="img-responsive" src="assets/img/conv-04-django.png" /></p>
+        <p><strong>We've been around since August 2013.</strong> <em>(The Club grew out of the <a href="http://productpeople.tv/" title="Product People: A podcast focused on great products and the people who make them">Product People podcast</a>, and was originally called JFDI).</em></p>
       </div>
-      <div class="footer__col footer__col--small">
-        <p class="footer-heading">Follow Us</p>
-        <p>
-          <a href="#"><i class="fa fa-twitter"></i> twitter</a> <br>
-          <a href="#"><i class="fa fa-facebook"></i> facebook</a>
+    </div>
+    <!-- /.row --> 
+    
+  </div>
+  <!-- /.container --> 
+  
+</div>
+<!-- /.module-padding -->
+
+<div class="module-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h2 class="text-center"> 
+          
+          <!-- <i class="fa fa-3x fa-medkit matching-color"></i><br> --> 
+          
+          <em class="matching-color">Get help when you need it</em> </h2>
+        <hr>
+        <p>When you work alone, you can't just go and tap someone on the shoulder and ask a question. Product People Club is a place to ask questions, bounce ideas off people, and get help when you need it.</p>
+        <p>The ability to get real-time help, support, and feedback is a huge help for those of us building things on our own.</p>
+      </div>
+    </div>
+    <!-- /.row --> 
+    
+  </div>
+  <!-- /.container --> 
+  
+</div>
+<!-- /.module-padding -->
+
+<div class="guests module-padding">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center"> <small>Exclusive, in-depth video interviews with </small><br>
+        <em class="matching-color">the best product people in the world</em> </h2>
+      <div class="col-sm-8 col-sm-offset-2">
+        <p>Club members also get to watch Product People podcast interviews <em>live</em>, as well as access the full video interview whenever they want.</p>
+      </div>
+    </div>
+    <!-- /.row --> 
+    
+  </div>
+  <!-- /.container --> 
+  
+</div>
+<!-- /.guests -->
+
+<div class="quote-long inverse-major pattern-noise">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7 col-sm-offset-3">
+        <blockquote>
+          <p>I can't thank you enough for putting this group together. Everyone is so supportive!</p>
+          <small><strong>Valon Sopi</strong>, <em>Product People Club member</em></small> </blockquote>
+      </div>
+    </div>
+  </div>
+  <!-- /.container --> 
+  
+</div>
+<!-- /.quote-long -->
+
+<div class="pricing pattern-noise">
+  <div class="container">
+    <h2> <em class="matching-color">Join Product People Club:</em><br>
+      <small>the community for people building &amp; launching their own thing</small> </h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-major">
+          <div class="panel-heading"> <i class="fa fa-3x fa-comments-o"></i>
+            <h3>Annual membership</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>Access the membership site</li>
+              <li>Access over 10 full-length video interviews with founders <em>($200 value)</em></li>
+              <li>Watch interviews live and ask questions</li>
+              <li>Free copy of Amplification <em>($39 value)</em></li>
+              <li><strong>Access Slack chat room</strong></li>
+              <li><strong>Free copy of <a href="http://startingandsustaining.com/#purchase" title="Starting and Sustaining: A book and spreadsheet to help you launch and maintain a SaaS web application by Garrett Dimon">Starting &amp; Sustaining</a></strong> ($79 value - 38 copies left)</li>
+            </ul>
+          </div>
+          <div class="panel-footer">
+            <h4 class="pull-right">$199 / year</h4>
+            <a href="https://www.mailoutinteractive.com/Industry/Subscribe.aspx?m=31004" class="btn btn-lg pull-left">Sold out - Join waiting list</a> </div>
+        </div>
+        <!-- /.panel 1 --> 
+        
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"> <i class="fa fa-3x fa-calendar"></i>
+            <h3>Monthly membership</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>Access to membership site</li>
+              <li>Access over 10 full-length video interviews with founders <em>($200 value)</em></li>
+              <li>Watch interviews live and ask questions</li>
+              <li>Free copy of Amplification <em>($39 value)</em></li>
+            </ul>
+          </div>
+          <div class="panel-footer">
+            <h4 class="pull-right">$29 / month</h4>
+            <a href="https://www.mailoutinteractive.com/Industry/Subscribe.aspx?m=31004" class="btn btn-lg pull-left">Sold out - Join waiting list</a> </div>
+        </div>
+        <!-- /.panel 3 --> 
+        
+      </div>
+    </div>
+    <!-- /.row --> 
+    
+  </div>
+  <!-- /.container --> 
+  
+</div>
+<!-- /.pricing -->
+
+<div class="waiting-list pattern-noise module-padding">
+  <div class="container">
+    <div class="row">
+      <div class="text-center col-sm-8 col-sm-offset-2">
+        <h2> <em class="matching-color">Join the waiting list</em> </h2>
+        <p>We'll have space for new members soon. Enter your email below and we'll notify you when a slot opens up.</p>
+      </div>
+    </div>
+    <!-- /.row -->
+    
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <form class="form-inline" action="https://www.mailoutinteractive.com/Industry/SubscribeRedirect.aspx" method="post" name="justin-embedded-subscribe-form" target="_blank">
+          <input name="mailinglistid" type="hidden" value="31004">
+          <input name="success" type="hidden" value="http://justinjackson.ca/email-confirmed.html">
+          <input name="continue" type="hidden" value="http://justinjackson.ca/email-thanks.html">
+          <input name="failure" type="hidden" value="http://justinjackson.ca/email-failure.html">
+          <input id="LOCATION" name="LOCATION" type="hidden" value="exitscreen">
+          <div class="row">
+            <div class="form-group col-sm-4">
+              <input class="form-control" id="mce-EMAIL" name="EMAIL" type="text" placeholder="Your Email">
+            </div>
+            <div class="form-group col-sm-4">
+              <input class="form-control" id="mce-EMAIL" name="givenname" type="text" placeholder="First Name">
+            </div>
+            <div class="form-group col-sm-4">
+              <button class="btn btn-block" type="submit" value="Subscribe">Join the list!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /.row --> 
+    
+  </div>
+  <!-- /.container --> 
+  
+</div>
+<!-- /.guests -->
+
+<div class="questions module-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <p class="pull-right"><a href="http://justinjackson.ca/about/"><img src="https://www.mailoutinteractive.com/SSLImg/www.mailoutinteractive.com/Industry/Home/7450/29473/images/justin-jackson-smile-barber-1024x1024.png" alt="That's me!" width="150" height="150" border="0"></a></p>
+        <h2> <em class="matching-color">Have questions?</em> </h2>
+        <p><a href="mailto:&#x69;&#x6E;&#x66;&#x6F;&#x40;&#x6A;&#x66;&#x64;&#x69;&#x2E;&#x62;&#x7A;">Email me here</a>: info@jfdi.bz</p>
+        <p> Cheers,<br>
+          <em>Justin Jackson</em><br>
         </p>
-      </div>
-      <div class="footer__col footer__col--small footer__col--last">
-        <p class="footer-heading">Like this design?</p>
-        <p>
-          <a href="#">Buy <b>Levels Theme</b></a>
-        </p>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__bottom-right">A thing by <a href="https://twitter.com/yourname">Your Name</a></p>
-        <p>&copy; Your Company Inc. All Right Reserved</p>
+        <p><strong>PS</strong>: <em>over 80% of our current members have shipped a product or project since they joined. We've just started featuring these at <a href="http://shipped.club">shipped.club</a></em></p>
       </div>
     </div>
-  </footer>
-
+    <!-- /.row --> 
+    
+  </div>
+  <!-- /.container --> 
   
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="assets/js/app.js"></script>
+</div>
+<!-- /.guests --> 
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+
+<!-- Local path: assets/js/jquery.min.js --> 
+
+<!-- Bootstrap JavaScript plugins --> 
+
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> 
+
+<!-- Local path: assets/js/bootstrap.min.js --> 
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) --> 
+
+<!--[if lt IE 9]>
+
+    <script src="assets/js/respond.min.js"></script>
+
+    <![endif]--> 
+
+<script>
+
+			$(document).ready(function(){
+
+      
+
+        
+
+      
+
+			 });
+
+		</script> 
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+
+  ga('create', 'UA-52061896-1', 'auto');
+
+  ga('send', 'pageview');
+
+
+
+</script>
 </body>
 </html>
